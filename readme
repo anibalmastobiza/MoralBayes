@@ -1,1 +1,19 @@
+# MoralBayes
 
+End‑to‑end pipeline for a Bayesian‑updating moral‑judgment experiment.
+
+## Structure
+- `stimuli/` – generator and JSON dilemmas  
+- `experiment/` – jsPsych web task  
+- `notebooks/` – power analysis (and others)  
+- `analysis/` – Bayesian model notebook, plotting helper  
+- `manuscript/` – APA7 LaTeX paper  
+- `figures/` – auto‑generated plots  
+- `run_all.sh` – rebuild everything
+
+## Quick start
+```bash
+bash init_repo.sh
+source .venv/bin/activate
+python stimuli/make_stimuli.py
+open experiment/index.html
